@@ -16,7 +16,7 @@ public class Main {
 
             }catch (GroupIndexOutOfBoundsException e){
 
-                System.out.println("I catch some exception: " + e.getMessage());
+                System.out.println("I catch some exception:  " + e.getMessage());
 
             }
 
