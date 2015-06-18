@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.gmail.miv</OriginalElement>
+  <nodes>
+    <node x="12.0" y="75.0">com.gmail.miv.Main</node>
+    <node x="-320.0" y="-28.0">com.gmail.miv.Group</node>
+    <node x="-578.0" y="-28.0">com.gmail.miv.Human</node>
+    <node x="-595.0" y="151.0">com.gmail.miv.Student</node>
+    <node x="12.0" y="-25.0">com.gmail.miv.GroupIndexOutOfBoundsException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.gmail.miv.Student" target="com.gmail.miv.Human">
+      <point x="0.0" y="-52.5" />
+      <point x="0.0" y="64.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="62.0" y="242.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
