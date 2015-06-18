@@ -13,6 +13,31 @@ public class Group {
         this.description = description;
     }
 
+    public String findStudentBySecondName(String secondName) {
+
+        String result = null;
+        try {
+
+            for (Student student : students) {
+
+                // here can be exception if students[i] == null, cover by finally :)
+                if (student.secondName.equals(secondName)) {
+
+                    result = student.getInfo() + " was found by second name " + secondName + " in group " +
+                            description;
+                }
+            }
+
+        } finally {
+
+            if (result == null) {
+                result = "Nobody was found by second name " + secondName + " in group " + description;
+            }
+        }
+
+        return result;
+    }
+
     public void addStudent(Student student) throws GroupIndexOutOfBoundsException {
 
         try {

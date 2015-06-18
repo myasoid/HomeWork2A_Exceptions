@@ -6,7 +6,7 @@ public class Main {
 
         Group group = new Group("Some group");
 
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < 11; i++) {
 
             try {
 
@@ -21,6 +21,9 @@ public class Main {
             }
 
         }
+
+        System.out.println(group.findStudentBySecondName("Name5"));
+        System.out.println(group.findStudentBySecondName("SecondName2"));
 
     }
 

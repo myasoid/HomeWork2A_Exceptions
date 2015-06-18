@@ -1,7 +1,7 @@
 package com.gmail.miv;
 
 
-public class Student extends Human{
+public class Student extends Human {
 
     String specialization;
 
