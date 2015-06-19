@@ -3,7 +3,7 @@ package com.gmail.miv;
 
 public class Group {
 
-    static int SIZE_OF_GROUP = 10;
+    static public int SIZE_OF_GROUP = 10;
 
     private String description;
     private int lenth = 0;
@@ -21,13 +21,14 @@ public class Group {
             for (Student student : students) {
 
                 // here can be exception if students[i] == null, cover by finally :)
-                if (student.secondName.equals(secondName)) {
+                if (student.getSecondName().equals(secondName)) {
 
                     result = student.getInfo() + " was found by second name " + secondName + " in group " +
                             description;
                 }
             }
-
+        } catch (Exception e) {
+            result = "Nobody was found by second name " + secondName + " in group " + description;
         } finally {
 
             if (result == null) {
@@ -59,4 +60,19 @@ public class Group {
 
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getLenth() {
+        return lenth;
+    }
+
+    public void setLenth(int lenth) {
+        this.lenth = lenth;
+    }
 }

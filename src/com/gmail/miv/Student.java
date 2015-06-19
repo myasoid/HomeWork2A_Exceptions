@@ -3,7 +3,7 @@ package com.gmail.miv;
 
 public class Student extends Human {
 
-    String specialization;
+    private String specialization;
 
     public Student(String name, String secondName, String specialization) {
         super(name, secondName);
@@ -14,10 +14,17 @@ public class Student extends Human {
     @Override
     public String getInfo() {
         return "Student{" +
-                "name='" + super.name + '\'' +
-                "secondName='" + super.secondName + '\'' +
+                "name='" + super.getName() + '\'' +
+                "secondName='" + super.getSecondName() + '\'' +
                 "specialization='" + specialization + '\'' +
                 '}';
     }
 
+    public String getSpecialization() {
+        return specialization;
+    }
+
+    public void setSpecialization(String specialization) {
+        this.specialization = specialization;
+    }
 }
